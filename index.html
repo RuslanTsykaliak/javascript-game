@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Game</title>
+    <link
+      rel="shortcut icon"
+      href="assets/favicon.ico"
+      sizes="16x16 32x32 64x64"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bangers&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style/index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <canvas id="canvas1"></canvas>
+      <div class="info"></div>
+      <div>
+        <!-- controls -->
+        <p><strong>Controls:</strong> Up and down arrow keys to move, spacebar to shoot.</p>
+        <p><strong>Additional Controls:</strong></p>
+        <ul>
+            <li>Press 'd' for debug mode to see enemy hitboxes and lives.</li>
+            <li>Press 'p' to pause the game and 'r' to resume the game.</li>
+        </ul>
+        <p>
+            <strong>Power Up:</strong> Enter power-up mode by colliding with a small power-up fish (glowing) or by shooting fast Moonfish (2 light bulbs on stalks) from a distance.
+        </p>
+        <p>
+            <strong>Win Condition:</strong> Reach a score over 60 within 30 seconds to win the game!
+        </p>
+        <p>
+            <strong>Performance Note:</strong> If you experience any performance issues or lag on older computers, please let me know. This game is not optimized for mobile phones.
+        </p>
+    </div>
+        
+    <!-- characters -->
+    <img id="player" src="assets/images/player.png" />
+    <img id="angler1" src="assets/images/angler1.png" />
+    <img id="angler2" src="assets/images/angler2.png" />
+    <img id="lucky" src="assets/images/lucky.png" />
+    <img id="drone" src="assets/images/drone.png" />
+
+    <!-- props -->
+    <img id="projectile" src="assets/images/projectile.png" />
+    <img id="gears" src="assets/images/gears.png" />
+    <img id="smokeExplosion" src="assets/images/smokeExplosion.png" />
+    <img id="fireExplosion" src="assets/images/fireExplosion.png" />
+    <img id="shield" src="assets/images/shield.png" />
+
+    <!-- environment -->
+    <img id="layer1" src="assets/images/layer1.png" />
+    <img id="layer2" src="assets/images/layer2.png" />
+    <img id="layer3" src="assets/images/layer3.png" />
+    <img id="layer4" src="assets/images/layer4.png" />
+
+    <!-- sounds -->
+    <audio id="powerup" src="assets/sounds/powerup.wav"></audio>
+    <audio id="powerdown" src="assets/sounds/powerdown.wav"></audio>
+    <audio id="explosion" src="assets/sounds/explosion.wav"></audio>
+    <audio id="shot" src="assets/sounds/shot.wav"></audio>
+    <audio id="hit" src="assets/sounds/hit.wav"></audio>
+    <audio id="shieldSound" src="assets/sounds/shield.wav"></audio>
+
+    <!-- add type module  -->
+    <script type="module" src="script/index.js"></script>
+  </body>
+</html>
